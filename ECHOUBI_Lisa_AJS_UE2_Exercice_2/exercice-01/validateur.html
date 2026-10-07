@@ -18,9 +18,45 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./validateur.html">Validateur de mot de
+                            passe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../exercice-02/devinettes.html">Jeu de devinettes</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../exercice-03/simulateur-bancaire.html">Simulateur
+                            bancaire</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <div class="container">
+            <div class="container text-center">
+                <h1>Validateur de mot de passe</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <form id="monForm">
+                                <label for="motDePasse" class="form-label">Mot de passe</label>
+                                <input type="password" class="form-control" id="votreMDP">
+                                <button type="button" id="unBouton" class="btn btn-primary">Log-in</button>
+                        </div>
+                        <div id="message" class="alert alert-secondary">
+                            Mon message
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-
+    <script src="./validateur.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
