@@ -1,0 +1,72 @@
+<!--
+ NOM: ECHOUBI 
+ CLASSE: P2A 
+ PROJET: UE2 - Exercices, Unité 2
+ DESCRIPTION: Répondre aux question en affichant la réponse dans la console 
+ DATE: 07/10/2026
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>UE2 Exercice devinettes</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../exercice-01/validateur.html">Validateur de mot de
+                            passe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./devinettes.html">Jeu de devinettes</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../exercice-03/simulateur-bancaire.html">Simulateur
+                            bancaire</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="container text-center">
+                <h1>Jeu de devinettes</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <form id="monForm">
+
+                                <p>Nombre aléatoire entre 1 et 100 inclus</p>
+                                <p>Vous avez 10 essais</p>
+
+                                <label for="proposition">Veuillez saisir votre proposition :</label>
+                                <input id="idProposition" name="proposition" type="text" class="form-control">
+                                <button type="button" id="idBoutton" class="btn btn-primary">Valider</button>
+                                <button type="button" id="idNouvPartie" class="btn btn-primary">Nouvelle partie</button>
+
+                                <div id="message" class="alert alert-secondary">
+                                    Mon message
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./devinettes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

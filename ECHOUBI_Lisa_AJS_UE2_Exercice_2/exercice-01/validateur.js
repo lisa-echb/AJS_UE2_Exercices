@@ -15,13 +15,15 @@ console.warn("2. Pour chaque règle non respectée, affichez un message d'erreur
 console.warn("3. Si toutes les règles sont respectées, affichez un message de succès.")
 
 const monForm = document.getElementById("monForm");
-const motDePasseEntree = document.getElementById("votreMDP");
+
+const inputMDP = document.getElementById("idMotdePasse");
+
 const envoie = document.getElementById("unBouton");
 const message = document.getElementById("message");
 
-monForm.addEventListener("click", function (event) {
+let passWordTrue = inputMDP.addEventListener("input", function (event) {
     let passWordValide = true;
-    const motDePasse = motDePasseEntree.value;
+    let motDePasse = event.target.value;
 
     while (passWordValide) {
         // Vérification de la taille du mot de passe
@@ -77,12 +79,11 @@ monForm.addEventListener("click", function (event) {
                     else {
                         // retour
                         message.textContent = "Mot de passe validé";
-                        return message.className = "alert alert-success";
-                        // return console.log(passWordValide);
+                        message.className = "alert alert-success";
+                        return console.log(passWordValide);
                     }
                 }
             }
         }
     }
 })
-
